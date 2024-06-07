@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="CSS/pruebaiti.css">
+</head>
+<body>
+    <h1>Gestión de Tareas ESPAM MFL</h1>
+    <form id="task-form">
+        <input type="text" id="title" placeholder="Título" required>
+        <input type="text" id="description" placeholder="Descripción" required>
+        <input type="date" id="due-date" required>
+        <select id="priority" required>
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+        <button type="submit">Agregar Tarea</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Buscar por título">
+    
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Prioridad</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <!-- Aquí se mostrarán las tareas -->
+        </tbody>
+    </table>
+
+    <script src="JS/pruebaiti.js"></script>
+</body>
+</html>
